@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Space Invaders</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Borys Kupar" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    window.jQuery || document.write( "<script src='lib/jquery-1.9.1.min.js'>\x3C/script>" )
+    //--><!]]>
+    </script>
+	<script type="text/javascript" src="js/ship.js"></script>
+	<script type="text/javascript" src="js/invader.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	<div id="screen">
+		<div class="shell"></div>
+		<div id="ship"></div>
+
+		<div class="controls">
+			<p>Level: <span class="level">1</span> Points: <span class="points">0</span></p>
+		</div>
+
+		<div class="start-game">
+			<img src="images/logo.png"/>
+			<a class="start" href="#">Start game!</a>
+			<br/>
+			<a href="http://en.wikipedia.org/wiki/Space_Invaders" target="_blank">Space Invaders wiki</a>
+			<a href="http://twitter.com/borys_kupar" target="_blank">@borys_kupar</a>
+		</div>
+
+		<div class="game-over">
+			<p>GAME OVER</p>
+			<a class="play-again" href="#">Play again?</a>
+		</div>
+	</div>
+</body>
+</html>
