@@ -1,0 +1,117 @@
+body {
+	background-color: #4d4d4d;
+}
+
+#screen	{
+	background-color: #000;
+	height: 600px;
+	width: 800px;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+}
+
+#ship {
+	width: 46px;
+	height: 26px;
+	background: url("../images/ship.png");
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+
+.shell {
+	width: 3px;
+	height: 5px;
+	background: #fff;
+	position: absolute;
+	display: none;
+}
+
+.bug {
+	background-image: url("../images/enemies_96x64.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	z-index: 100;
+}
+
+.bug.killed {
+	background-image: url("../images/invaderkilled.png");
+	background-position: 0px 0px !important;
+}
+
+.bug.fat {
+	background-position: 0px 0px;
+}
+
+.bug.fat.animation {
+	background-position: 0px -32px;
+}
+
+.bug.slim {
+	background-position: -32px 0px;
+}
+
+.bug.slim.animation {
+	background-position: -32px -32px;
+}
+
+.bug.squid {
+	background-position: -64px 0px;
+}
+
+.bug.squid.animation {
+	background-position: -64px -32px;
+}
+
+.start-game {
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.start-game img {
+	width: 500px;
+	margin-bottom: 70px;
+}
+
+.start-game a.start {
+	display: block;
+	margin-bottom: 50px;
+}
+
+.start-game a.start,
+.game-over a {
+	font-size: 30px;
+	padding: 0;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.game-over {
+	width: 380px;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+	display: none;
+}
+
+.game-over p {
+	color: #fff;
+	font-size: 60px;
+}
+
+.controls {
+	padding: 20px;
+}
+
+.controls p {
+	color: #fff;
+	font-size: 22px;
+	margin: 0;
+	font-weight: bold;
+}

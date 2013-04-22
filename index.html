@@ -1,56 +1,42 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Space Invaders</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Borys Kupar" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    window.jQuery || document.write( "<script src='lib/jquery-1.9.1.min.js'>\x3C/script>" )
+    //--><!]]>
+    </script>
+	<script type="text/javascript" src="js/ship.js"></script>
+	<script type="text/javascript" src="js/invader.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	<div id="screen">
+		<div class="shell"></div>
+		<div id="ship"></div>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Space-invaders : JavaScript implementation of Space Invaders game" />
+		<div class="controls">
+			<p>Level: <span class="level">1</span> Points: <span class="points">0</span></p>
+		</div>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<div class="start-game">
+			<img src="images/logo.png"/>
+			<a class="start" href="#">Start game!</a>
+			<br/>
+			<a href="http://en.wikipedia.org/wiki/Space_Invaders" target="_blank">Space Invaders wiki</a>
+			<a href="http://twitter.com/borys_kupar" target="_blank">@borys_kupar</a>
+		</div>
 
-    <title>Space-invaders</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/borys-kupar/space-invaders">View on GitHub</a>
-
-          <h1 id="project_title">Space-invaders</h1>
-          <h2 id="project_tagline">JavaScript implementation of Space Invaders game</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/borys-kupar/space-invaders/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/borys-kupar/space-invaders/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>space-invaders</h1>
-
-<p>JavaScript implementation of Space Invaders game</p>
-
-<p>Specially for UWC IV</p>
-
-<p>Dependencies:
-jQuery 1.9.1</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Space-invaders maintained by <a href="https://github.com/borys-kupar">borys-kupar</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		<div class="game-over">
+			<p>GAME OVER</p>
+			<a class="play-again" href="#">Play again?</a>
+		</div>
+	</div>
+</body>
 </html>
